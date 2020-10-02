@@ -1,0 +1,135 @@
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header" "main .content" "main .sidenav" "footer footer";
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto;
+    width: auto;
+    margin: 15px;
+    grid-area: content;
+}
+
+#content div {
+    /*background: #3bbced;*/
+    padding-bottom: 20px;
+}
+
+body {
+    /*color: #fff;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*text-align: center;*/
+}
+
+header {
+    display: grid;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    /*justify-content: center;*/
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    grid-area: header;
+}
+
+article {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2D3748;
+    /*float: left;
+    width: 60%;*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+aside {
+    display: grid;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2D3748;
+    float: right;
+    /*width: 35%;*/
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-top: 40px;
+    grid-area: aside;
+}
+
+footer {
+    clear: both;
+    background-color: #2C5282;
+    color: #FFFFFF;
+}
+
+#about {
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#socialmedia {
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#archives {
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#sec1 {
+    background-color: #E2E8F0;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #4299E1;
+}
+
+.img1 {
+    display: flex;
+    border-radius: 50%;
+    max-width: 15%;
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+.img2 {
+    max-width: 25%;
+    float: right;
+    margin: 10px 0px 0px 10px;
+}
+
+.img3 {
+    max-width: 25%;
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+.art1 {
+    border-bottom: 5px;
+    border-bottom-style: groove;
+    padding-bottom: 90px;
+}
